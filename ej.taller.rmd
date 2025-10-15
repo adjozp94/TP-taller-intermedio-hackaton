@@ -80,7 +80,13 @@ for (i in 1:length(colnames(dm))){
 }
 
 ```
-Aquí vemos gráficos de violín
+
+---
+
+## Aquí vemos el gráfico de violín
+
+---
+
 
 ```{r graphs2, echo=F}
 # Graficos de violín
