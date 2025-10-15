@@ -6,7 +6,7 @@ output:
     fig_width: 10
     fig_height: 6
 ---
-
+ 
 En el taller se estuvo trabajando con un archivo en formato .csv sobre algas en la región de California,  estudiando sus características según los datos disponibles.
 Para ello se dispuso de una rutina en el repositorio del taller y se puso en funcionamiento.
 Lo que se intenta realizar en esta rutina, es poner en funcionamiento la rutina con datos propios. 
