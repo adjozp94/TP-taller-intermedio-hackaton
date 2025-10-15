@@ -100,8 +100,7 @@ par(mfrow=c(1,1))  # volver a 1 gráfico
 ```
 
 
-Aquí podemos observar la matriz y el gráfico de correlaciones entre variables. La mayor
-correlación se da entre la captura de corvina por kilo e índice de juveniles
+### Aquí podemos observar la matriz y el gráfico de correlaciones entre variables. La mayor correlación se da entre la captura de corvina por kilo e índice de juveniles
 
 
 
@@ -125,7 +124,7 @@ corrplot(cor_mat, method = "circle", type = "upper",
 dm_sp = st_as_sf(dm, coords = c("lon", "lat"), crs = 4326)
 ```
 
-Gráfico de capturas de corvina considerando los 6 años de estudio juntos
+## Gráfico de capturas de corvina considerando los 6 años de estudio juntos
 
 ```{r graphs4, echo=F}
 #Gráfico simple. El gradiente de color va de menor a mayor altura
@@ -152,7 +151,7 @@ xlim <- c(min(dm$lon) - 0.2, max(dm$lon) + 0.2)
 ylim <- c(min(dm$lat) - 0.2, max(dm$lat) + 0.2)
 ```
 
-Mapas de lances y captura de corvina por año
+## Mapas de lances y captura de corvina por año
 
 ```{r graphs5, echo=F}
 # Gráfico facetado. 
@@ -179,7 +178,7 @@ ggplot() +
 
 ```
 
-Graficamos por año sf 
+## Graficamos por año sf 
 
 
 ```{r graphs6, echo=F}
@@ -213,7 +212,7 @@ ggplot() +
 
 ```
 
-Graficamos por año  tf  
+## Graficamos por año  tf  
 
 ```{r graphs7, echo=F}
 
@@ -273,7 +272,8 @@ ggplot() +
 ```
 
 
-Ahora calculamos los cuartiles capcorvkg por año 
+## Ahora calculamos los cuartiles capcorvkg por año 
+
 
 ```{r, include=FALSE}
 cuartiles <- quantile(dm$capcorvkg, probs = seq(0, 1, 0.25), na.rm = TRUE)
@@ -325,9 +325,7 @@ ggplot() +
 
 ```
 
-
-
-También se puede replicar a tf y sf
+### También se puede replicar a tf y sf
 
 ```{r, include=FALSE}
 # Calcular los cuartiles capcorvkg por año (opcionalmente podrías hacerlo por año)
@@ -379,7 +377,7 @@ ggplot() +
   )
 ```
 
-Por último, lo aplicamos a la salinidad
+## Por último, lo aplicamos a la salinidad
 
 ```{r, include=FALSE}
 # Calcular los cuartiles capcorvkg por año (opcionalmente podrías hacerlo por año)
